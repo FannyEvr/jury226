@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gelasio:ital,wght@0,400..700;1,400..700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.slide{
+    width: 100%;
+    min-height: 100vh;
+    background-color: #333333;
+    position: relative;
+    padding: 80px 120px;
+    box-sizing: border-box;
+}
+
+p{
+    font-family: "Gelasio", serif;
+    color: #FFFFF8;
+    font-size: 20px;
+    text-align: justify;
+}
+
+#home{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("images/fond.jpg");
+    background-position: center top;
+}
+
+#home .title{
+    position: relative;
+    display: flex;
+    margin-right: -11vw;
+}
+
+ #home .title h1{
+    color: #FFFFF8;
+    font-family: "Alex Brush", cursive;
+    font-size: 10vw;
+    font-weight: 400;
+     align-self: start;
+     margin-right: -2vw;
+}
+
+#home .title h2{
+    color: #FFFFF8;
+    font-family: "Alex Brush", cursive;
+    font-size: 10vw;
+    font-weight: 400;
+    align-self: end;
+    margin-left: -3vw;
+}
+
+#home .title img{
+    align-self: center;
+    width: 380px;
+}
+
+header{
+    height: 15vh;
+    background-color: #333333;
+    grid-column: 1 / span 12;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+header nav{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+header nav ul{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    list-style:none;
+}
+
+header nav ul li a{
+    color: #FFFFF8;
+    text-decoration: none;
+    font-family: "Gelasio", serif;
+    font-size: 1.5vw;
+}
+#about{
+    background-color: #333333;
+    width: 100%;
+}
+
+.deco img{
+    margin-left: 2vh;
+    margin-top: 2vh;
+    width: 100px;
+}
+
+.deco .ligne1{
+    background-color: #FFFFF8;
+    width: 170px;
+    height: 2px;
+    margin-left: 130px;
+    margin-top: -8vh;
+}
+
+.deco .ligne2{
+    background-color: #FFFFF8;
+    width: 170px;
+    height: 2px;
+    rotate: 90deg;
+    margin-top: 165px;
+    margin-left: -40px;
+}
+
+.deco.hl{
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.deco.hr{
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: rotateY(180deg);
+}
+
+.deco.bl{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    transform: rotateX(180deg);
+}
+
+.deco.br{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    transform: rotateY(180deg) rotateX(180deg);
+}
+
+.container h1{
+    font-family: "Alex Brush", cursive;
+    font-size: 4vw;
+    font-weight: 400;
+    color: #FFFFF8;
+}
+
+.container p{
+    width: 60%;
+    margin-top: 20px;
+}
+
+.container img{
+    width: 400px;
+    right: 0;
+}
+
+
+
+
+
+
+
+
+@media all and (max-width: 700px){
+
+    #home .title{
+        position: relative;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: -60vw;
+        margin-right: 0;
+    }
+
+    #home .title img{
+        width: 270px;
+    }
+
+    #home .title h1{
+        font-size: 100px;
+        margin-right: 0;
+        align-self: center;
+        line-height: 0.8;
+    }
+
+    #home .title h2{
+        font-size: 100px;
+        margin-left: 0;
+        align-self: center;
+        line-height: 0.8;
+    }
+}
+
+
+
