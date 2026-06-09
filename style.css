@@ -22,6 +22,8 @@ p{
     text-align: justify;
 }
 
+/*--------------------------------HOME------------------------------*/
+
 #home{
     display: flex;
     justify-content: center;
@@ -59,6 +61,8 @@ p{
     width: 380px;
 }
 
+/*------------------------------------MENU----------------------------*/
+
 header{
     height: 15vh;
     background-color: #333333;
@@ -91,6 +95,9 @@ header nav ul li a{
     font-family: "Gelasio", serif;
     font-size: 1.5vw;
 }
+
+/*-----------------------------ABOUT-------------------------------------*/
+
 #about{
     background-color: #333333;
     width: 100%;
@@ -163,12 +170,24 @@ header nav ul li a{
     right: 0;
 }
 
+#about .btn{
+    background-color: #272727;
+    color: #FFFFF8;
+    display: block;
+    width: fit-content;
+    padding: 6px 15px;
+    font-family: "Gelasio", serif;
+    font-size: 20px;
+    text-decoration: none;
+    margin-top: 20px;
+}
 
 
 
 
 
 
+/*------------------------------PHONE---------------------------------*/
 
 @media all and (max-width: 700px){
 
