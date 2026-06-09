@@ -6,7 +6,7 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" type="text/css" href="style.css">
-    <title>Document</title>
+    <title>Jury</title>
 </head>
 <body>
 
@@ -27,8 +27,8 @@
             <ul>
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">A propos</a></li>
-                <li><a href="#galerie">Galerie</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="galerie.html">Galerie</a></li>
+                <li><a href="contact.html">Contact</a></li>
             </ul>
         </nav>
     </header>
@@ -58,38 +58,76 @@
         </div>
 
         <div class="container">
-            <h1>A Propos</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, architecto dicta dignissimos doloremque dolorum est eum explicabo fuga harum quasi quod rerum totam, veniam. Ab aperiam consequatur corporis dicta, hic in ipsam, mollitia non numquam pariatur quae quisquam saepe tempora!</p>
-            <a href="#" class="btn">En savoir plus</a>
-            <img src="images/TINA-49.jpg" alt="Tina">
-        </div>
+            <div class="gauche">
+                <div class="texte">
+                    <h1>A Propos</h1>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ab, architecto dicta dignissimos doloremque dolorum est eum explicabo fuga harum quasi quod rerum totam, veniam. Ab aperiam consequatur corporis dicta, hic in ipsam, mollitia non numquam pariatur quae quisquam saepe tempora!</p>
+                </div>
+                <div class="btn-read-more" data-target="#zone1">read more</div>
+                <div class="content-more" id="zone1">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequatur consequuntur dolores enim
+                        impedit in laborum, maxime nihil nobis nostrum nulla numquam omnis possimus quidem quod ratione
+                        repellendus reprehenderit sit veritatis.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolore est ex exercitationem, illum nulla
+                        sint vel. Ad blanditiis, cupiditate eaque exercitationem magni maxime nobis, omnis quis quisquam
+                        rem, ullam ut.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi aut harum, in incidunt inventore
+                        libero magnam maxime molestias nihil pariatur quis repudiandae sequi, voluptates? Distinctio maiores
+                        nemo optio porro quasi.</p>
+                </div>
+            </div>
+            <div class="droite">
+                <img src="images/TINA-49.jpg" alt="Tina">
 
-    </div>
-    <div class="slide" id="galerie">
-         <div class="deco hl">
-            <img src="logos/logo%20demi.svg" alt="déco">
-            <div class="ligne1"></div>
-            <div class="ligne2"></div>
-        </div>
-        <div class="deco hr">
-            <img src="logos/logo%20demi.svg" alt="déco">
-            <div class="ligne1"></div>
-            <div class="ligne2"></div>
-        </div>
-        <div class="deco br">
-            <img src="logos/logo%20demi.svg" alt="déco">
-            <div class="ligne1"></div>
-            <div class="ligne2"></div>
-        </div>
-        <div class="deco bl">
-            <img src="logos/logo%20demi.svg" alt="déco">
-            <div class="ligne1"></div>
-            <div class="ligne2"></div>
-        </div>
-        <div class="container"></div>
+            </div>
+            
+            <img id="logobas" src="logos/logo%20horizontal.svg">
 
+        </div>
     </div>
 
+<!-- --------------------------PIED PAGE-------------------------------- -->
+
+<footer>
+    <div class="wrapper">
+        <div id="disclaimer">
+            <h3>WebSite Title</h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium aspernatur corporis, ea eligendi error fugiat fugit illum magnam maxime non, odit quam quas quo saepe sapiente sit suscipit tempore voluptatibus?</p>
+        </div>
+        <div id="a propos">
+            <h4>about us</h4>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corporis culpa fuga ipsum laboriosam, modi molestiae nihil quae rerum suscipit ullam.
+            </p>
+        </div>
+        <div id="social-footer">
+            <a href="https://facebook.com" target="_blank">
+                <img src="images/facebook.svg" alt="Logo Facebook">
+            </a>
+            <a href="https://x.com" target="_blank">
+                <img src="images/x.svg" alt="Logo X">
+            </a>
+            <a href="https://instagram.com" target="_blank">
+                <img src="images/instagram.svg" alt="Logo Instagram">
+            </a>
+        </div>
+        <div id="copyright">
+            &copy; 2026 EPSE - Bac Infographie / Bes WebDev
+        </div>
+    </div>
+</footer>
+
+<!-- --------------------SCRIPT-------------------------------------- -->
+<script>
+    const readMores = document.querySelectorAll('.btn-read-more');
+
+    readMores.forEach(readMore => {
+        readMore.addEventListener('click', (e) => {
+            let target = document.querySelector(readMore.dataset.target);
+            target.classList.toggle('open-read');
+        })
+    })
+</script>
 
 </body>
 </html>
